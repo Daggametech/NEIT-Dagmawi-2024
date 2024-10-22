@@ -58,7 +58,7 @@
         Adds functionality to the button so that when it is clicked it will execute the shoot function
         */
         triggerButton.addEventListener(`click`, shoot)
-
+        reloadButton.addEventListener(`click`,  reload)
         /*
         When the shoot function is executed by a user/player clicking the trigger button:
          1. currentAmmo is subtracted by one
@@ -75,7 +75,17 @@
             }
             triggerDisplay.innerHTML = `AMMO: ${currentAmmo}`
         }
+        function reload(event)
+        {
+            if(currentAmmo<max)
+            { 
+              inventory - (max - currentAmmo) 
+              currentAmmo + (max - currentAmmo)
+            
+            }
 
+
+        }
         /*------------------INSTRUCTIONS------------------
         Using the code above as a guide, try to make the reload button work below this comment.
         1. Add an event listener to it that calls a function when clicked
