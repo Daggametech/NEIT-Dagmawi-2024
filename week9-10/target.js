@@ -18,4 +18,14 @@ class GameObject
    
 
     }
+
+    //Draws a rectangle 
+    render()
+    {
+        ctx.save();
+            ctx.fillStyle = this.color
+            ctx.translate(this.radius+world.radius)
+            ctx.rotate(this.angle*Math.PI/360)
+            ctx.fillRect(this.radius);
+    }
 }
