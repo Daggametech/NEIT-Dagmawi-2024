@@ -43,6 +43,7 @@ function win()
 
     {
         return true
+        
     }
 
     return false;
@@ -59,8 +60,30 @@ function lose()
 }
 function game()
 {
-    Target 
+      
+    for(var i=0; i<amt; i++)
+{
+    Target[i].color = `green`;
+    Target[i].radius = 8; 
+    Target[i].x = rand(0, c.width);
+    Target[i].y = rand(0, c.height);
+
+    if(target == true)
+    {
+        
+
+    }
+
 
 }
 
+for(var i=0; i<amt; i++)
+{
+    faketargetarget[i].color = `red`;
+    faketargetarget[i].radius = 8; 
+    faketargetarget[i].x = rand(0, c.width);
+    faketargetarget[i].y = rand(0, c.height);
 
+}
+
+}

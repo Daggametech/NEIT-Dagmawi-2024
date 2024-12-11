@@ -28,4 +28,6 @@ class GameObject
             ctx.rotate(this.angle*Math.PI/360)
             ctx.fillRect(this.radius);
     }
+
+    addEventListener(mousepressed, )
 }

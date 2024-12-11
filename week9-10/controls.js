@@ -1,9 +1,9 @@
 var mouse = true
 
-function clicked(GameObject)
+function addEventListener(mousepressed)
 {
     {
-    if(GameObject.target(mouse) && mouse.pressed == true)
+    if(GameObject == target && mousepressed )
         {
             return true
             
@@ -13,16 +13,4 @@ function clicked(GameObject)
     }
 
        
-}
-function clicked(GameObject)
-{
-    {
-    if(GameObject.faketarget(mouse) && mouse.pressed == true)
-        {
-            return true
-        }
-        return false;
-
-    }
-
 }
